@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Header with Tailwind</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body class="bg-gray-100">
+  <!-- Fixed Header -->
+  <!-- <header class="fixed top-0 left-0 w-full bg-blue-600 text-white shadow-lg z-10"> -->
+  <header class="w-full bg-blue-600 text-white shadow-lg z-10">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Website</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-blue-200">Home</a></li>
+          <li><a href="#" class="hover:text-blue-200">About</a></li>
+          <li><a href="#" class="hover:text-blue-200">Services</a></li>
+          <li><a href="#" class="hover:text-blue-200">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container mx-auto px-4 py-4">
+      <!-- First Row of Buttons -->
+      <div class="grid grid-cols-7 gap-2 mb-2">
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Sun</button>
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Mon</button>
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Tue</button>
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Wed</button>
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Thu</button>
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Fri</button>
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Sat</button>
+      </div>
+      <!-- Second Row of Buttons -->
+      <div class="grid grid-cols-4 gap-2">
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Elementary School</button>
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Middle School</button>
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">High School</button>
+        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Interpreter</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <div class="space-y-4">
+      <div class="grid grid-cols-2">
+        <button class="bg-yellow-800 hover:bg-yellow-700 text-black text-left font-semibold py-2 px-4">Time</button>
+        <button class="bg-yellow-800 hover:bg-yellow-700 text-black font-semibold py-2 px-4 w-full">Activity</button>
+      </div>
+      <div class="grid grid-cols-2">
+        <button class="bg-white-800 hover:bg-blue-700 text-black py-2 px-4">7:45AM - 8:00AM</button>
+        <button class="bg-white-800 hover:bg-blue-700 text-black py-2 px-4 w-full">Cafeteria Setup: ES Boys</button>
+      </div>
+      <div class="grid grid-cols-2">
+        <button class="bg-white-800 hover:bg-blue-700 text-black py-2 px-4">8:00AM - 8:30AM</button>
+        <button class="bg-white-800 hover:bg-blue-700 text-black py-2 px-4 w-full"><b>Flagpole</b><p>Theme: Dress up as your emotion!</p></button>
+      </div>
+    </div>
+  </main>
+
+    <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
