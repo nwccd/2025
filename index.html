@@ -1,106 +1,80 @@
-﻿<!DOCTYPE html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>NWCCD 2024</title>
-  <link rel="stylesheet" href="css/foundation.min.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWCCD 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="no-js">
-  <div class="row">
-    <div class="columns small-12">
-      <div class="title-bar" data-responsive-toggle="nwccd-menu" data-hide-for="very large">
-        <div class="title-bar-left">
-          <button class="menu-icon" type="button" data-toggle></button>
-          <div class="title-bar-title">NWCCD 2025 -- Camp Theme Foobar</div>
-        </div>
-      </div>
 
-      <div class="title-bar" id="nwccd-menu">
-        <div class="title-bar-left">
-          <ul class="accordion vertical menu" data-accordion-menu>
-			<li><a class="title-bar-text inactive" href="index.html">Camp and Flagpole Themes</a>
-			<li><a class="title-bar-text inactive" href="announcement.html">Announcements</a>
-			<li><a class="title-bar-text inactive">Schedule</a>
-				<ul class="menu vertical nested">
-					<li><a class="title-bar-text inactive" href="s_saturday.html">Saturday</a></li>
-					<li><a class="title-bar-text inactive" href="s_sunday.html">Sunday</a></li>
-					<li><a class="title-bar-text inactive" href="s_monday.html">Monday</a></li>
-					<li><a class="title-bar-text inactive" href="s_tuesday.html">Tuesday</a></li>
-					<li><a class="title-bar-text inactive" href="s_wednesday.html">Wednesday</a></li>
-					<li><a class="title-bar-text inactive" href="s_thursday.html">Thursday</a></li>
-					<li><a class="title-bar-text inactive" href="s_friday.html">Friday</a></li>
-				</ul>
-			</li>
-			<li><a class="title-bar-text inactive">Memory Verses</a>
-				<ul class="menu vertical nested">
-					<li><a class="title-bar-text inactive" href="v_monday.html">Monday</a></li>
-					<li><a class="title-bar-text inactive" href="v_tuesday.html">Tuesday</a></li>
-					<li><a class="title-bar-text inactive" href="v_wednesday.html">Wednesday</a></li>
-					<li><a class="title-bar-text inactive" href="v_thursday.html">Thursday</a></li>
-					<li><a class="title-bar-text inactive" href="prayerministryteam.html">Prayer Ministry Team</a>
-				</ul>
-			</li>
-		    <li><a class="title-bar-text inactive" href="cabins.html">Cabins (Sunday - Friday)</a></li>
-		    <li><a class="title-bar-text inactive" href="cabins_sat.html">Cabins (Saturday)</a></li>
-			<li><a class="title-bar-text inactive" href="staff.html">Staff</a></li>
-			<li><a class="title-bar-text inactive" href="lakesupervision.html">Lake Supervision</a></li>
-			<li><a class="title-bar-text inactive" href="campchallenge.html">Camp Challenge</a></li>
-			<li><a class="title-bar-text inactive" href="pointsystem.html">Point System</a></li>
-			<li><a class="title-bar-text inactive">Interpreters</a>
-				<ul class="menu vertical nested">
-					<li><a class="title-bar-text inactive" href="t_saturday.html">Saturday</a></li>
-					<li><a class="title-bar-text inactive" href="t_sunday.html">Sunday</a></li>
-					<li><a class="title-bar-text inactive" href="t_monday.html">Monday</a></li>
-					<li><a class="title-bar-text inactive" href="t_tuesday.html">Tuesday</a></li>
-					<li><a class="title-bar-text inactive" href="t_wednesday.html">Wednesday</a></li>
-					<li><a class="title-bar-text inactive" href="t_thursday">Thursday</a></li>
-					<li><a class="title-bar-text inactive" href="t_friday">Friday</a></li>
-				</ul>
-			</li>
-          </ul>
+<div class="bg-gray-100">
+
+    <div class="h-screen flex overflow-hidden bg-gray-200">
+        <!-- Sidebar -->
+        <div class="absolute bg-gray-800 text-white w-56 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300" id="sidebar">
+            <!-- Your Sidebar Content -->
+            <div class="p-4">
+                <h1 class="text-2xl font-semibold">NWCCD 2025</h1>
+                <ul class="mt-4">
+                    <li class="mb-2"><a href="sch-mon-es.html" class="block hover:text-indigo-400">Schedule</a></li>
+                    <li class="mb-2"><a href="verse-mon-es.html" class="block hover:text-indigo-400">Memory Verse</a></li>
+                    <li class="mb-2"><a href="psa-mon-all.html" class="block hover:text-indigo-400">Announcements</a></li>
+                    <li class="mb-2"><a href="point-system.html" class="block hover:text-indigo-400">Point System</a></li>
+                    <li class="mb-2"><a href="sleep.html" class="block hover:text-indigo-400">Sleeping Assignments</a></li>
+                    <li class="mb-2"><a href="staff.html" class="block hover:text-indigo-400">Staff Directory</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+
+        <!-- Content -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <!-- Navbar -->
+            <div class="bg-white shadow">
+                <div class="container mx-auto">
+                    <div class="flex justify-between items-center py-4 px-2">
+                        <button class="text-gray-500 hover:text-gray-600" id="open-sidebar">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        </button>
+                        <h1 class="text-xl font-semibold">NWCCD 2025</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Body -->
+            <div class="flex-1 overflow-auto p-1">
+
+                <div class="mb-1 grid grid-cols-1 grid-rows-1 gap-1" role="group">
+                    <a href="#" class="border border-gray-400 bg-yellow-200 p-4 text-xl font-medium flex justify-center items-center">NWCCD 2025</a>
+                </div>
+
+                <div class="container grid grid-cols-1">
+                    <div class="grid grid-cols-1">
+                        <div class="border border-gray-400 bg-blue-100 px-2 py-4 text-sm font-bold whitespace-nowrap">Welcome to NWCCD 2025!</div>
+                        <div class="border border-gray-400 bg-blue-100 px-2 py-4 text-sm font-bold flex justify-center">Upper left, do you see the hamburger icon? Click on that to get started</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="columns small-12">
-	  <table class="tg">
+    <script>
+        const sidebar = document.getElementById('sidebar');
+    const openSidebarButton = document.getElementById('open-sidebar');
+    
+    openSidebarButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        sidebar.classList.toggle('-translate-x-full');
+    });
 
-<thead>
-<tr><th class="donotwrap">Overall Camp Theme</th><th width="100%">Inside Out</th></tr>
-</thead>
-<tbody>
-<tr><td class="donotwrap">Monday Flagpole Theme</td><td width="100%"><b>Dress up as your emotion!</b></td></tr>
-<tr><td class="donotwrap">Tuesday Flagpole Theme</td><td width="100%"><b>Hide, Seek and Find your Emotions!</b></td></tr>
-<tr><td class="donotwrap">Wednesday Flagpole Theme</td><td width="100%"><b>Make and show us your Emotion prop!</b></td></tr>
-<tr><td class="donotwrap">Thursday Flagpole Theme</td><td width="100%"><b>Demonstrate your Emotion prop with a skit!</b></td></tr>
-</tbody>
-</table>
+    // Close the sidebar when clicking outside of it
+    document.addEventListener('click', (e) => {
+        if (!sidebar.contains(e.target) && !openSidebarButton.contains(e.target)) {
+            sidebar.classList.add('-translate-x-full');
+        }
+    });
+    </script>
 
-</div>
-</div>
-
-<div class="row">
-    <div class="columns small-12">
-	  <table class="tg">
-
-<tbody>
-<tr><td width="100%">Possible prizes for "Most Accurate", "Most Creative" and/or "Best Overall".</td></tr>
-</tbody>
-</table>
-
-</div>
-</div>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/what-input.min.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script>$(document).foundation();</script>
 </body>
-
 </html>
