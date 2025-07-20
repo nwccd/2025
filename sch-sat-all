@@ -17,10 +17,12 @@
             <div class="p-4">
                 <h1 class="text-2xl font-semibold">NWCCD 2025</h1>
                 <ul class="mt-4">
-                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Schedule</a></li>
-                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Memory Verse</a></li>
-                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Announcements</a></li>
-                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Point System</a></li>
+                    <li class="mb-2"><a href="sch-sat-all.html" class="block hover:text-indigo-400">Schedule</a></li>
+                    <li class="mb-2"><a href="verse-mon-es.html" class="block hover:text-indigo-400">Memory Verse</a></li>
+                    <li class="mb-2"><a href="psa-fri-all.html" class="block hover:text-indigo-400">Announcements</a></li>
+                    <li class="mb-2"><a href="point-system.html" class="block hover:text-indigo-400">Point System</a></li>
+                    <li class="mb-2"><a href="sleep.html" class="block hover:text-indigo-400">Sleeping Assignments</a></li>
+                    <li class="mb-2"><a href="staff.html" class="block hover:text-indigo-400">Staff Directory</a></li>
                 </ul>
             </div>
         </div>
