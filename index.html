@@ -1,73 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fixed Header with Tailwind</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NWCCD 2024</title>
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="bg-gray-100">
-  <!-- Fixed Header -->
-  <!-- <header class="fixed top-0 left-0 w-full bg-blue-600 text-white shadow-lg z-10"> -->
-  <header class="w-full bg-blue-600 text-white shadow-lg z-10">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">My Website</h1>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="#" class="hover:text-blue-200">Home</a></li>
-          <li><a href="#" class="hover:text-blue-200">About</a></li>
-          <li><a href="#" class="hover:text-blue-200">Services</a></li>
-          <li><a href="#" class="hover:text-blue-200">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <div class="container mx-auto px-4 py-4">
-      <!-- First Row of Buttons -->
-      <div class="grid grid-cols-7 gap-2 mb-2">
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Sun</button>
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Mon</button>
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Tue</button>
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Wed</button>
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Thu</button>
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Fri</button>
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Sat</button>
+<body class="no-js">
+  <div class="row">
+    <div class="columns small-12">
+      <div class="title-bar" data-responsive-toggle="nwccd-menu" data-hide-for="very large">
+        <div class="title-bar-left">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">NWCCD 2024 -- Camp Theme</div>
+        </div>
       </div>
-      <!-- Second Row of Buttons -->
-      <div class="grid grid-cols-4 gap-2">
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Elementary School</button>
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Middle School</button>
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">High School</button>
-        <button class="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Interpreter</button>
+
+      <div class="title-bar" id="nwccd-menu">
+        <div class="title-bar-left">
+          <ul class="accordion vertical menu" data-accordion-menu>
+			<li><a class="title-bar-text inactive" href="index.html">Camp and Flagpole Themes</a>
+			<li><a class="title-bar-text inactive" href="announcement.html">Announcements</a>
+			<li><a class="title-bar-text inactive">Schedule</a>
+				<ul class="menu vertical nested">
+					<li><a class="title-bar-text inactive" href="s_saturday.html">Saturday</a></li>
+					<li><a class="title-bar-text inactive" href="s_sunday.html">Sunday</a></li>
+					<li><a class="title-bar-text inactive" href="s_monday.html">Monday</a></li>
+					<li><a class="title-bar-text inactive" href="s_tuesday.html">Tuesday</a></li>
+					<li><a class="title-bar-text inactive" href="s_wednesday.html">Wednesday</a></li>
+					<li><a class="title-bar-text inactive" href="s_thursday.html">Thursday</a></li>
+					<li><a class="title-bar-text inactive" href="s_friday.html">Friday</a></li>
+				</ul>
+			</li>
+			<li><a class="title-bar-text inactive">Memory Verses</a>
+				<ul class="menu vertical nested">
+					<li><a class="title-bar-text inactive" href="v_monday.html">Monday</a></li>
+					<li><a class="title-bar-text inactive" href="v_tuesday.html">Tuesday</a></li>
+					<li><a class="title-bar-text inactive" href="v_wednesday.html">Wednesday</a></li>
+					<li><a class="title-bar-text inactive" href="v_thursday.html">Thursday</a></li>
+					<li><a class="title-bar-text inactive" href="prayerministryteam.html">Prayer Ministry Team</a>
+				</ul>
+			</li>
+		    <li><a class="title-bar-text inactive" href="cabins.html">Cabins (Sunday - Friday)</a></li>
+		    <li><a class="title-bar-text inactive" href="cabins_sat.html">Cabins (Saturday)</a></li>
+			<li><a class="title-bar-text inactive" href="staff.html">Staff</a></li>
+			<li><a class="title-bar-text inactive" href="lakesupervision.html">Lake Supervision</a></li>
+			<li><a class="title-bar-text inactive" href="campchallenge.html">Camp Challenge</a></li>
+			<li><a class="title-bar-text inactive" href="pointsystem.html">Point System</a></li>
+			<li><a class="title-bar-text inactive">Interpreters</a>
+				<ul class="menu vertical nested">
+					<li><a class="title-bar-text inactive" href="t_saturday.html">Saturday</a></li>
+					<li><a class="title-bar-text inactive" href="t_sunday.html">Sunday</a></li>
+					<li><a class="title-bar-text inactive" href="t_monday.html">Monday</a></li>
+					<li><a class="title-bar-text inactive" href="t_tuesday.html">Tuesday</a></li>
+					<li><a class="title-bar-text inactive" href="t_wednesday.html">Wednesday</a></li>
+					<li><a class="title-bar-text inactive" href="t_thursday">Thursday</a></li>
+					<li><a class="title-bar-text inactive" href="t_friday">Friday</a></li>
+				</ul>
+			</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </header>
+  </div>
 
-  <!-- Main Content -->
-  <main class="container mx-auto px-4 py-8">
-    <div class="space-y-4">
-      <div class="grid grid-cols-2">
-        <button class="bg-yellow-800 hover:bg-yellow-700 text-black text-left font-semibold py-2 px-4">Time</button>
-        <button class="bg-yellow-800 hover:bg-yellow-700 text-black font-semibold py-2 px-4 w-full">Activity</button>
-      </div>
-      <div class="grid grid-cols-2">
-        <button class="bg-white-800 hover:bg-blue-700 text-black py-2 px-4">7:45AM - 8:00AM</button>
-        <button class="bg-white-800 hover:bg-blue-700 text-black py-2 px-4 w-full">Cafeteria Setup: ES Boys</button>
-      </div>
-      <div class="grid grid-cols-2">
-        <button class="bg-white-800 hover:bg-blue-700 text-black py-2 px-4">8:00AM - 8:30AM</button>
-        <button class="bg-white-800 hover:bg-blue-700 text-black py-2 px-4 w-full"><b>Flagpole</b><p>Theme: Dress up as your emotion!</p></button>
-      </div>
-    </div>
-  </main>
+  <div class="row">
+    <div class="columns small-12">
+	  <table class="tg">
 
-    <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto px-4 text-center">
-      <p>&copy; 2025 My Website. All rights reserved.</p>
-    </div>
-  </footer>
+<thead>
+<tr><th class="donotwrap">Overall Camp Theme</th><th width="100%">Inside Out</th></tr>
+</thead>
+<tbody>
+<tr><td class="donotwrap">Monday Flagpole Theme</td><td width="100%"><b>Dress up as your emotion!</b></td></tr>
+<tr><td class="donotwrap">Tuesday Flagpole Theme</td><td width="100%"><b>Hide, Seek and Find your Emotions!</b></td></tr>
+<tr><td class="donotwrap">Wednesday Flagpole Theme</td><td width="100%"><b>Make and show us your Emotion prop!</b></td></tr>
+<tr><td class="donotwrap">Thursday Flagpole Theme</td><td width="100%"><b>Demonstrate your Emotion prop with a skit!</b></td></tr>
+</tbody>
+</table>
 
+</div>
+</div>
+
+<div class="row">
+    <div class="columns small-12">
+	  <table class="tg">
+
+<tbody>
+<tr><td width="100%">Possible prizes for "Most Accurate", "Most Creative" and/or "Best Overall".</td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/what-input.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>$(document).foundation();</script>
 </body>
+
 </html>

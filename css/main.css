@@ -1,0 +1,101 @@
+﻿
+.highlight {
+	 background-color:black;
+	 color:white;
+	 font-weight:bold;
+	 border:thick;
+	 border-color:black;
+}
+
+.escabin {
+	background-color:aqua;
+	color:black;
+	font-weight:bold;
+}
+
+.mscabin {
+	background-color:lime;
+	color:black;
+	font-weight:bold;
+}
+
+.hscabin {
+	background-color:gray;
+	color:black;
+	font-weight:bold;
+}
+
+.is-drilldown-submenu { background: #000000 }
+
+.accordion { background: #000000; }
+
+.accordion-title { color: #FFFFFF; }
+.accordion-title:hover, .accordion-title:focus { background-color: #000000; }
+.accordion-content { background-color: #000000; color: #FFFFFF; }
+
+.menu .active > a { background: #FFFFFF; color: #FFFFFF; }
+
+.active { color: #FFFFFF }
+
+.inactive { color: #FFFFFF }
+
+.title-bar-text:hover { color: #FFFFFF }
+
+.tg {
+  border-collapse:collapse;
+  border-spacing:0;
+  font-size:14px;
+}
+
+.tg th {
+  border-width:1px;
+  border-style:solid;
+  background-color: #ffffc7;
+  padding:2px 5px 2px 5px;
+}
+
+.tg td {
+  border-width:1px;
+  border-style:solid;
+  padding:2px 5px 2px 5px;
+}
+
+.es {
+  border-collapse:collapse;
+  border-spacing:0;
+  font-size:14px;
+}
+
+.es th {
+  border-width:1px;
+  border-style:solid;
+  background-color:#8b0a50;
+  color:#ffffff;
+  padding:2px 5px 2px 5px;
+}
+
+.es td {
+  border-width:1px;
+  border-style:solid;
+  padding:2px 5px 2px 5px;
+}
+
+.donotwrap {
+  white-space:nowrap;
+}
+
+.highlight {
+	 background-color:black;
+	 color:white;
+	 font-weight:bold;
+	 border:thick;
+	 border-color:black;
+}
+
+.tr cabinschedule {
+  font-size:18px;
+}
+
+.title-bar {
+  font-size:14px;
+}

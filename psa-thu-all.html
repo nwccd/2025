@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWCCD 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<div class="bg-gray-100">
+
+    <div class="h-screen flex overflow-hidden bg-gray-200">
+        <!-- Sidebar -->
+        <div class="absolute bg-gray-800 text-white w-56 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300" id="sidebar">
+            <!-- Your Sidebar Content -->
+            <div class="p-4">
+                <h1 class="text-2xl font-semibold">NWCCD 2025</h1>
+                <ul class="mt-4">
+                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Schedule</a></li>
+                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Memory Verse</a></li>
+                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Announcements</a></li>
+                    <li class="mb-2"><a href="#" class="block hover:text-indigo-400">Point System</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <!-- Navbar -->
+            <div class="bg-white shadow">
+                <div class="container mx-auto">
+                    <div class="flex justify-between items-center py-4 px-2">
+                        <button class="text-gray-500 hover:text-gray-600" id="open-sidebar">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        </button>
+                        <h1 class="text-xl font-semibold">NWCCD 2025</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Body -->
+            <div class="flex-1 overflow-auto p-1">
+
+                <div class="mb-1 grid grid-cols-3 grid-rows-1 gap-1" role="group">
+                    <a href="sch-mon-es.html" class="border border-gray-400 bg-white p text-sm font-medium flex justify-center items-center">Schedule</a>
+                    <a href="verse-mon-es.html" class="border border-gray-400 bg-white p text-sm font-medium flex justify-center items-center">Memory Verse</a>
+                    <a href="psa-mon-all.html" class="border border-gray-400 bg-yellow-200 p text-sm font-medium flex justify-center items-center">Announcements</a>
+                </div>
+
+                <div class="mb-1 grid grid-cols-7 grid-rows-1 gap-1" role="group">
+                    <a href="sch-sun-all.html" class="border border-gray-400 bg-white p text-sm font-medium flex justify-center items-center">Sun</a>
+                    <a href="psa-mon-all.html" class="border border-gray-400 bg-white p text-sm font-medium flex justify-center items-center">Mon</a>
+                    <a href="psa-tue-all.html" class="border border-gray-400 bg-yellow-200 p text-sm font-medium flex justify-center items-center">Tue</a>
+                    <a href="psa-wed-all.html" class="border border-gray-400 bg-white p text-sm font-medium flex justify-center items-center">Wed</a>
+                    <a href="psa-thu-all.html" class="border border-gray-400 bg-white p text-sm font-medium flex justify-center items-center">Thu</a>
+                    <a href="psa-fri-all.html" class="border border-gray-400 bg-white p text-sm font-medium flex justify-center items-center">Fri</a>
+                    <a href="psa-sat-all.html" class="border border-gray-400 bg-white p text-sm font-medium flex justify-center items-center">Sat</a>
+                </div>
+
+                <div class="container grid grid-cols-1">
+                    <div class="grid grid-cols-1">
+                            <div class="border border-gray-400 bg-white p-4 text-xl">1) Counselors, please make sure that you and your campers are drinking plenty of fluids.</div>
+                            <div class="border border-gray-400 bg-white p-4 text-xl">2) We are a great team! Love getting to know the new staff and reconnecting with the rest of you.</div>
+                            <div class="border border-gray-400 bg-white p-4 text-xl">3) Please check your kids' wristbands. If the name is faded, there are sharpie pens on the staff table for you to refresh the names on the wristbands.</div>
+                            <div class="border border-gray-400 bg-white p-4 text-xl">4) Today, we have "Lake Day" for swimming. Make sure everyone is using suntan lotion.</div>
+                            <div class="border border-gray-400 bg-white p-4 text-xl">5) Make sure your cabin is thinking about the Camp Challenge.</div>
+                            <div class="border border-gray-400 bg-white p-4 text-xl">6) If anyone has accepted Christ, please let Jim Smith know ASAP.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+    const openSidebarButton = document.getElementById('open-sidebar');
+    
+    openSidebarButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        sidebar.classList.toggle('-translate-x-full');
+    });
+
+    // Close the sidebar when clicking outside of it
+    document.addEventListener('click', (e) => {
+        if (!sidebar.contains(e.target) && !openSidebarButton.contains(e.target)) {
+            sidebar.classList.add('-translate-x-full');
+        }
+    });
+    </script>
+
+</body>
+</html>
